@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;600;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Fraunces', serif;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    max-width: 50rem;
+    width: 92%;
+    margin: 0 auto;
+}
+
+.calculator {
+    margin-top: 10rem;
+    background-color: #BEF486;
+    padding: 4rem;
+    border-radius: 4rem;
+}
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 15rem;
+    background-color: #3e5b20;
+    border-radius: 2rem;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.previous-value,
+.curren-value {
+    color: white;
+}
+.curren-value {
+    font-size: 6rem;
+}
+
+.previous-value {
+    font-size: 4rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.grid button {
+    border: none;
+    padding: 2rem 0;
+    border-radius: 1rem;
+    background-color: #BEF486;
+    box-shadow:  0 0 6px rgba(167, 220, 111, 0.717);
+    color: white;
+    font-size: 3.6rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.grid button:active {
+    background-color: rgba(167, 220, 111, 0.717);
+}
+
+.grid button:focus {
+    outline: none;
+}
